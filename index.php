@@ -33,8 +33,8 @@
                     <input name="password" type="password" required>
                 </div>
                 <div class="form-group">
-                    <label for="passwordrepeat">Confirm password:</label>
-                    <input name="passwordrepaet" type="password" required>
+                    <label for="password_repeat">Confirm password:</label>
+                    <input name="password_repeat" type="password" required>
                 </div>
     
                 <button type="submit" name="submit">Sign up</button>

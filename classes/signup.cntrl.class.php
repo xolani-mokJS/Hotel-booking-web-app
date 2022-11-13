@@ -37,7 +37,20 @@ class signupController{
     } else {  
         $result = true;
     }
+    return $result;
+    }
     
+    private function invalidEmail(){
+        $result;
+
+        if(!filter_var($this->user_email, FILTER_VALIDATE_EMAIL)){
+            $result = false;
+        }
+        else{ 
+            $result = true;
+        }
+
+        return $result;
+    }
 }
 
-}
