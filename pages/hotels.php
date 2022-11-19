@@ -62,8 +62,7 @@
         <?php
         foreach ($_SESSION['hotelList'] as $hotel) {
             echo "
-                <div class='box m-2'>
-                    <li> " . $hotel->getimg()."</li>
+                <div class='box'>
                     <li> Hotel Id: ". $hotel->getId() ." </li>
                     <li> Name: ". $hotel->getName() ." </li>
                     <li> Cost per night: R". $hotel->getCostPerNight() ." </li>

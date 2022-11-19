@@ -3,59 +3,81 @@
 $hotelData = [
     
     new Hotel(
-        1, 
-        "Grand Hotel", 
-        500, 
+        "TSSH001", 
+        "The Sunny Side Hotel", 
+        850, 
         20, 
         false, 
         [
-            "Wifi Connection" => "True",
-            "Catering" => "False",
-            "Swimming Pool" => "True",
-            "Parking" => "False"
+            "Wifi Connection",
+            "Catering",
+            "Swimming Pool",
+            "Parking",
+            "close to a nature reserve",
+            "pool",
+            "beach-side",
+            "close to malls"
         ],
-        "https://images.unsplash.com/photo-1457332253637-21d324d25df9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
     ),
     new Hotel(
-        2, 
-        "Palms Resort", 
-        600, 
+        "TDH002", 
+        "The Dam Hotel", 
+        720, 
         30, 
         false, 
         [
-            "Wifi Connection" => "True",
-            "Catering" => "True",
-            "Swimming Pool" => "True",
-            "Parking" => "True"
+            "Wifi Connection",
+            "Catering",
+            "Swimming Pool",
+            "Parking",
+            "next to a river",
+            "explore nature",
+            "pool",
+            "kids play area",
+            "Complimentary drinks"
         ],
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        "https://unsplash.com/photos/DGa0LQ0yDPc"
     ),
     new Hotel(
-        3, 
-        "Protea Hotel", 
-        500, 
-        0, 
+        "TRBAS003", 
+        "The River Bank Hotel and spa", 
+        650, 
+        1, 
         true, 
         [
-            "Wifi Connection" => "True",
-            "Catering" => "True",
-            "Swimming Pool" => "True",
-            "Parking" => "True"
+            "Wifi Connection",
+            "Catering",
+            "Swimming Pool",
+            "Parking",
+            "close to the beach",
+            "kids play area",
+            "massage included",
+            "no animals allowed",
+            "clean",
+            "self cooking area"
+
         ],
-        "protea-hotel.avif"
+        "https://unsplash.com/photos/MwSVEf7e3Y0"
     ),
     new Hotel(
-        4, 
-        "Bellville Lodge", 
-        800, 
+        "TRH004", 
+        "The Rains Hotel", 
+        810, 
         10, 
         false, 
         [
-            "Wifi Connection" => "True",
-            "Catering" => "True",
-            "Swimming Pool" => "True",
-            "Parking" => "True"
+            "Wifi Connection",
+            "Catering",
+            "Swimming Pool",
+            "Parking",
+            "always sunny",
+            "beach side",
+            "pool",
+            "kids play area",
+            "zoo",
+            "elephant rides"
         ],
-        "https://images.unsplash.com/photo-1519449556851-5720b33024e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+        "https://unsplash.com/photos/oyxsG2Lh_uA"
     )
 ];

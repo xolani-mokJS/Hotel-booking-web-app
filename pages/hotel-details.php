@@ -60,9 +60,9 @@ foreach ($_SESSION['hotelList'] as $hotel) {
                         <div>R". $selectedHotel->getCostPerNight() ." Per night </div>
                         <div>";
                             if( !$selectedHotel->getFullyBooked() ) {
-                            echo "<span class='has-text-success'> Rooms Available </span>";
+                            echo "<span class='success-text'> Rooms Available </span>";
                             } else {
-                            echo "<span class='has-text-danger'> No rooms available </span>";
+                            echo "<span class='error-text'> No rooms available </span>";
                             }
                 echo    "</div>             
                     </div>

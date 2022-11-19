@@ -8,13 +8,17 @@
 }
 
 body{
-    background-image: url(/img/hotel.jpg);
+ 
 }
 
 .app-section{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    background-image: url(/img/hotel.jpg);
+}
+.booking-info{
+    padding: 25px;
 }
 
 header{
@@ -61,6 +65,7 @@ input{
 }
 
 .compare-button{
+    cursor: pointer;
     color: #D6E4E5;
     padding: 10px;
     text-align: center;
@@ -71,21 +76,41 @@ input{
 
 }
 
-.book-button{
+.book-button ,
+.button-back{
+    cursor: pointer;
+    width: 160px;
+    padding: 10px 25px;
     color: black;
     background-color:#497174;
     border: 1px #497174 solid;
-    margin: 4;
+    margin-top: 20px;
+    margin-left: 4px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 .details-button{
+    cursor: pointer;
+    width: 160px;
+    padding: 10px 25px;
     color: #EFF5F5;
     background-color: black;
     border: 1px white solid;
-    margin: 4;
+    margin-top: 5px;
+    margin-left: 4px;
+    border-radius: 5px;
 }
 
 .p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.p-1{
+    color: #EFF5F5;
+    font-size: 20px;
     text-align: center;
     margin-top: 25px;
 }
@@ -96,6 +121,8 @@ li{
 }
 
 .box{
+    display: flex;
+    flex-direction: row;
     background-color: #393E46;
     margin: 15px;
     padding: 15px;
@@ -113,7 +140,8 @@ li{
 
 .hotel-detail{
     background-color:#D6E4E5;
-    text-align: left;
+    text-align: center;
+    padding: 25px;
 }
 .hotel-thumbnail{
     width: 400px;
@@ -124,7 +152,8 @@ li{
 }
 
 .hotel-info{
-    text-align: left;
+    display: flex;
+    flex-direction: row;
     padding: 15px;
     margin: 10px;
 }
