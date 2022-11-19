@@ -1,22 +1,11 @@
 <?php
 
-    require __DIR__ . "/../classes/hotel.class.php";
-    require_once __DIR__ . "/../includes/hotelDatabase.php";
+    require __DIR__ . "/../classes/Hotel.php";
+    require_once __DIR__ . "/../includes/hotelData.php";
 
     session_start();
 
-    /* 
-        Array inside of the SESSION Superglobal to hold hotel objects that
-        are inside the system
-    */
-
-    // Set value of session variable == data in hotelData.php
     $_SESSION['hotelList'] = $hotelData;
-
-    /* 
-        If user submitted data through the form
-        we want to save their data to local variables
-    */
 
     if (isset($_POST['submit'])) {
 
@@ -31,7 +20,6 @@
             $userNumDays = $_SESSION['userNumDays'];
      
 
-        // saving user data to SESSION superglobal
         $_SESSION['customer'] = [
             'name' => $name,
             'email' => $email,
@@ -53,42 +41,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Hotel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+    <header>
+        <h1 class="title">
+            Welcome to HotelCompare.com
+        </h1>
+        <p class="subtitle"> Your home for affordable hotels around the world.</p>    
+        <hr>
+        <p class="p">
+        Check out the results and choose one to book:
+    </p>
+    </header>
 
-    <h1 class="title">
-        Hotel List:
-    </h1>
 
-    <ul class="grid">
+
+    <ul class="hotel-info">
         <?php
         foreach ($_SESSION['hotelList'] as $hotel) {
             echo "
                 <div class='box m-2'>
+                    <li> " . $hotel->getimg()."</li>
                     <li> Hotel Id: ". $hotel->getId() ." </li>
                     <li> Name: ". $hotel->getName() ." </li>
                     <li> Cost per night: R". $hotel->getCostPerNight() ." </li>
                     <li>"; 
                         if( !$hotel->getFullyBooked() ) {
-                            echo "<span class='has-text-success'> Rooms Available </span>";
+                            echo "<span class='success-text'> Rooms Available </span>";
                         } else {
-                            echo "<span class='has-text-danger'> No rooms available </span>";
+                            echo "<span class='error-text'> No rooms available </span>";
                         }
+
             echo "  </li>
                     <li> Total Cost of Trip: R". $hotel->calculateCostOfStay($userNumDays) .",00 </li>
 
                     <div class='is-flex'>
                         <form class='m-1' action='confirm-booking.php' method='get'>
                             <input type='text' name='hotelId' value=". $hotel->getId() ." hidden>
-                            <button type='submit' class='button is-danger' name='book'>Book</button>
+                            <button type='submit' class='book-button' name='book'>Make Booking</button>
                         </form>
 
                         <form class='m-1' action='hotel-details.php' method='get'>
                             <input type='text' name='hotelId' value=". $hotel->getId() ." hidden>
-                            <button type='submit' class='button is-info' name='book'>Details</button>
+                            <button type='submit' class='details-button' name='book'>More Information</button>
                         </form>
                     </div>
                 </div>

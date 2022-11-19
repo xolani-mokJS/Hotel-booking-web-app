@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HotelCompare.com</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
-<body>
-    <section class="header-section">
-        <h1>HotelCompare.com</h1>
-        <p>Compare hotel prices to get the best value on the market</p>
-    </section>
-    <section class="body-section">
-        <div class="container">
-            <form action="" method="post">
-            <h3>Please fill on your information to get hotel comparison</h3>
-                <div class="form-group">
-                <form action="./pages/Hotels.pages.php" method="post">
-                <label for="customerName"> Your name and surname:</label>
-                <input type="text" name="customerName" placeholder="John doe" required>
-                <label for="email"> Email Address:</label>
-                <input type="email" name="customerEmail" placeholder="Johndoe@email.com" required>
 
-                <label for="checkInDate">Check In Date</label>
+<body>
+    <header>
+        <h1 class="title">
+            Welcome to HotelCompare.com
+        </h1>
+        <p class="subtitle"> Your home for affordable hotels around the world.</p>
+    </header>
+
+<section class="app-section">
+      <div id="app">
+        <p class="">
+            Please enter your details to compare.
+        </p>
+        <form action="./pages/hotels.php" method="post">
+            <div class="in-form-group">
+                <label for="customerName"> Enter your name:</label>
+                <input type="text" name="customerName" 
+                placeholder="John Doe" required>
+            </div>
+            <div class="in-form-group">
+                <label for="customerEMail">Your Email:</label>
+                <input type="email" name="customerEmail" placeholder="Johndoe@gmail.com" required>
+            </div>
+            <div class="in-form-group">
+                <label for="checkInDate">Check In Date:</label>
                 <input type="date" name="checkInDate" required>
-                <label for="checkInDate">Check Out Date</label>
+            </div>
+            <div class="in-form-group">
+                 <label for="checkInDate">Check Out Date:</label>
                 <input type="date" name="checkoutDate" required>
-                <button type="submit" name="submit" class="button is-danger">View Hotels</button>
+            </div>
+            <button type="submit" name="submit" class="button is-danger">See Comparison</button>
         </form>
-        </div>
-    </section>
+
+    </div>
+</section>
+  
+
 </body>
+
 </html>
+

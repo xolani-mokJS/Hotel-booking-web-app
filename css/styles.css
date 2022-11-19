@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: black;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.app-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF5F5;
+    padding: 25px;
+}
+
+.title{
+    font-size: 28px;
+    padding: 15px;
+}
+
+#app{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #497174;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.in-form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label{
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    color: #D6E4E5;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    margin: 10px;
+    color:#EB6440;
+    border-radius: 5px;
+
+}
+
+.book-button{
+    color: black;
+    background-color:#497174;
+    border: 1px #497174 solid;
+    margin: 4;
+}
+
+.details-button{
+    color: #EFF5F5;
+    background-color: black;
+    border: 1px white solid;
+    margin: 4;
+}
+
+.p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+li{
+    color:#EFF5F5 ;
+    list-style: none;
+}
+
+.box{
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #EFF5F5;
+}
+
+.error-text{
+    color: red;
+}
+
+.success-text{
+    color: green;
+}
+
+.hotel-detail{
+    background-color:#D6E4E5;
+    text-align: center;
+}
+.hotel-thumbnail{
+    width: 400px;
+}

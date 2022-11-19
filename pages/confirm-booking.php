@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/../classes/hotel.class.php.php";
+require __DIR__ . "/../classes/Hotel.php";
 
 
 session_start();
@@ -11,6 +11,16 @@ $selectedHotelId = $_GET['hotelId'];
 // empty variable to hold value of selected hotel object
 $selectedHotel;
 
+/* --- Filtering ---
+        1. loop over entire list of hotels
+
+        2. take id that passed through GET request and 
+           compares it to the id's of all hotels in array
+
+        3. if the id of any hotel in array is the same as
+           the id given from the previous page, we pull that Hotel
+           object out of the array, and assign it to the $selectedHotel variable
+    */
 foreach ($_SESSION['hotelList'] as $hotel) {
 
     if ($hotel->getId() == $selectedHotelId) {
@@ -22,7 +32,7 @@ foreach ($_SESSION['hotelList'] as $hotel) {
 // print out variable $selectedHotel to test
 // var_dump($selectedHotel);
 
-// echo "custoemr data:";
+echo "custoemr data:";
 
 var_dump($_SESSION['customer']);
 
@@ -36,7 +46,7 @@ var_dump($_SESSION['customer']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirm Booking</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
