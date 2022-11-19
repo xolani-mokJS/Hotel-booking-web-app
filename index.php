@@ -17,28 +17,18 @@
             <form action="" method="post">
             <h3>Please fill on your information to get hotel comparison</h3>
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input name="name" type="text" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Surname:</label>
-                    <input name="lastname" type="text" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input name="email" type="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Enter password:</label>
-                    <input name="password" type="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="password_repeat">Confirm password:</label>
-                    <input name="password_repeat" type="password" required>
-                </div>
-    
-                <button type="submit" name="submit">Sign up</button>
-            </form>
+                <form action="./pages/Hotels.pages.php" method="post">
+                <label for="customerName"> Your name and surname:</label>
+                <input type="text" name="customerName" placeholder="John doe" required>
+                <label for="email"> Email Address:</label>
+                <input type="email" name="customerEmail" placeholder="Johndoe@email.com" required>
+
+                <label for="checkInDate">Check In Date</label>
+                <input type="date" name="checkInDate" required>
+                <label for="checkInDate">Check Out Date</label>
+                <input type="date" name="checkoutDate" required>
+                <button type="submit" name="submit" class="button is-danger">View Hotels</button>
+        </form>
         </div>
     </section>
 </body>
