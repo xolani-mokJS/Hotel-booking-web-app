@@ -7,6 +7,10 @@
     font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    background-image: url(/img/hotel.jpg);
+}
+
 .app-section{
     display: flex;
     justify-content: center;
@@ -56,13 +60,13 @@ input{
     border-radius: 5px;
 }
 
-button{
+.compare-button{
     color: #D6E4E5;
     padding: 10px;
     text-align: center;
     width: 400px;
     margin: 10px;
-    color:#EB6440;
+    color:#393E46;
     border-radius: 5px;
 
 }
@@ -92,7 +96,7 @@ li{
 }
 
 .box{
-    background-color: black;
+    background-color: #393E46;
     margin: 15px;
     padding: 15px;
     border-radius: 5px;
@@ -109,8 +113,27 @@ li{
 
 .hotel-detail{
     background-color:#D6E4E5;
-    text-align: center;
+    text-align: left;
 }
 .hotel-thumbnail{
     width: 400px;
+}
+
+.image{
+    margin: 15px;
+}
+
+.hotel-info{
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+}
+
+.offer{
+    padding: 15px;
+    text-align: left ;
+}
+
+.offer-label{
+    text-decoration: underline;
 }

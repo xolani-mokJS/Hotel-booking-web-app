@@ -41,7 +41,7 @@
                  <label for="checkInDate">Check Out Date:</label>
                 <input type="date" name="checkoutDate" required>
             </div>
-            <button type="submit" name="submit" class="button is-danger">See Comparison</button>
+            <button type="submit" name="submit" class="compare-button">See Comparison</button>
         </form>
 
     </div>
