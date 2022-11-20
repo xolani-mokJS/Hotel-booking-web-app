@@ -15,7 +15,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;   
-    background-image: url(/img/hotel.jpg);
+    background-image: url(../img/hotel.jpg);
+    background-size: cover;
 }
 .booking-info{
     padding: 25px;
@@ -44,7 +45,7 @@ header{
     background-color: #497174;
     padding: 25px;
     margin: 15px;
-    border-radius: 50px;
+    border-radius: 15px;
 }
 
 .in-form-group{
